@@ -11,7 +11,7 @@ interface CellUpdate {
   style?: React.CSSProperties;
 }
 
-const socket = io('https://react2-backend.onrender.com');
+const socket = io('https://react2-backend.onrender.com:4000');
 
 const Spreadsheet: React.FC<SpreadsheetProps> = () => {
   const [grid, setGrid] = useState<{ value: string; style: React.CSSProperties }[][]>(
